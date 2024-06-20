@@ -1,0 +1,918 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "title": "Root Schema",
+  "type": "object",
+  "default": {},
+  "required": [
+    "id",
+    "name",
+    "desc",
+    "descData",
+    "closed",
+    "idOrganization",
+    "idEnterprise",
+    "pinned",
+    "url",
+    "shortUrl",
+    "prefs",
+    "labelNames",
+    "limits"
+  ],
+  "properties": {
+    "id": {
+      "title": "The id Schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "6672cb85ffe2eba51228c71f"
+      ]
+    },
+    "name": {
+      "title": "The name Schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Prueba Karate"
+      ]
+    },
+    "desc": {
+      "title": "The desc Schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "descData": {
+      "title": "The descData Schema",
+      "type": "null",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "closed": {
+      "title": "The closed Schema",
+      "type": "boolean",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "idOrganization": {
+      "title": "The idOrganization Schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "62ef27e42182415e7d3f1ea2"
+      ]
+    },
+    "idEnterprise": {
+      "title": "The idEnterprise Schema",
+      "type": "null",
+      "default": null,
+      "examples": [
+        null
+      ]
+    },
+    "pinned": {
+      "title": "The pinned Schema",
+      "type": "boolean",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "url": {
+      "title": "The url Schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "https://trello.com/b/AEPNxMn9/prueba-karate"
+      ]
+    },
+    "shortUrl": {
+      "title": "The shortUrl Schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "https://trello.com/b/AEPNxMn9"
+      ]
+    },
+    "prefs": {
+      "title": "The prefs Schema",
+      "type": "object",
+      "default": {},
+      "required": [
+        "permissionLevel",
+        "hideVotes",
+        "voting",
+        "comments",
+        "invitations",
+        "selfJoin",
+        "cardCovers",
+        "cardCounts",
+        "isTemplate",
+        "cardAging",
+        "calendarFeedEnabled",
+        "hiddenPluginBoardButtons",
+        "switcherViews",
+        "background",
+        "backgroundColor",
+        "backgroundImage",
+        "backgroundTile",
+        "backgroundBrightness",
+        "sharedSourceUrl",
+        "backgroundImageScaled",
+        "backgroundBottomColor",
+        "backgroundTopColor",
+        "canBePublic",
+        "canBeEnterprise",
+        "canBeOrg",
+        "canBePrivate",
+        "canInvite"
+      ],
+      "properties": {
+        "permissionLevel": {
+          "title": "The permissionLevel Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "private"
+          ]
+        },
+        "hideVotes": {
+          "title": "The hideVotes Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "voting": {
+          "title": "The voting Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "disabled"
+          ]
+        },
+        "comments": {
+          "title": "The comments Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "members"
+          ]
+        },
+        "invitations": {
+          "title": "The invitations Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "members"
+          ]
+        },
+        "selfJoin": {
+          "title": "The selfJoin Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "cardCovers": {
+          "title": "The cardCovers Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "cardCounts": {
+          "title": "The cardCounts Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "isTemplate": {
+          "title": "The isTemplate Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "cardAging": {
+          "title": "The cardAging Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "regular"
+          ]
+        },
+        "calendarFeedEnabled": {
+          "title": "The calendarFeedEnabled Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "hiddenPluginBoardButtons": {
+          "title": "The hiddenPluginBoardButtons Schema",
+          "type": "array",
+          "default": [],
+          "items": {},
+          "examples": [
+            []
+          ]
+        },
+        "switcherViews": {
+          "title": "The switcherViews Schema",
+          "type": "array",
+          "default": [],
+          "items": {
+            "title": "A Schema",
+            "type": "object",
+            "required": [
+              "viewType",
+              "enabled"
+            ],
+            "properties": {
+              "viewType": {
+                "title": "The viewType Schema",
+                "type": "string",
+                "examples": [
+                  "Board",
+                  "Table",
+                  "Calendar",
+                  "Dashboard",
+                  "Timeline",
+                  "Map"
+                ]
+              },
+              "enabled": {
+                "title": "The enabled Schema",
+                "type": "boolean",
+                "examples": [
+                  true,
+                  false
+                ]
+              }
+            },
+            "examples": [
+              {
+                "viewType": "Board",
+                "enabled": true
+              },
+              {
+                "viewType": "Table",
+                "enabled": true
+              },
+              {
+                "viewType": "Calendar",
+                "enabled": false
+              },
+              {
+                "viewType": "Dashboard",
+                "enabled": false
+              },
+              {
+                "viewType": "Timeline",
+                "enabled": false
+              },
+              {
+                "viewType": "Map",
+                "enabled": false
+              }
+            ]
+          },
+          "examples": [
+            [
+              {
+                "viewType": "Board",
+                "enabled": true
+              },
+              {
+                "viewType": "Table",
+                "enabled": true
+              },
+              {
+                "viewType": "Calendar",
+                "enabled": false
+              },
+              {
+                "viewType": "Dashboard",
+                "enabled": false
+              },
+              {
+                "viewType": "Timeline",
+                "enabled": false
+              },
+              {
+                "viewType": "Map",
+                "enabled": false
+              }
+            ]
+          ]
+        },
+        "background": {
+          "title": "The background Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "blue"
+          ]
+        },
+        "backgroundColor": {
+          "title": "The backgroundColor Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "#0079BF"
+          ]
+        },
+        "backgroundImage": {
+          "title": "The backgroundImage Schema",
+          "type": "null",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "backgroundTile": {
+          "title": "The backgroundTile Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "backgroundBrightness": {
+          "title": "The backgroundBrightness Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "dark"
+          ]
+        },
+        "sharedSourceUrl": {
+          "title": "The sharedSourceUrl Schema",
+          "type": "null",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "backgroundImageScaled": {
+          "title": "The backgroundImageScaled Schema",
+          "type": "null",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "backgroundBottomColor": {
+          "title": "The backgroundBottomColor Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "#0079BF"
+          ]
+        },
+        "backgroundTopColor": {
+          "title": "The backgroundTopColor Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            "#0079BF"
+          ]
+        },
+        "canBePublic": {
+          "title": "The canBePublic Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "canBeEnterprise": {
+          "title": "The canBeEnterprise Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "canBeOrg": {
+          "title": "The canBeOrg Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "canBePrivate": {
+          "title": "The canBePrivate Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "canInvite": {
+          "title": "The canInvite Schema",
+          "type": "boolean",
+          "default": false,
+          "examples": [
+            true
+          ]
+        }
+      },
+      "examples": [
+        {
+          "permissionLevel": "private",
+          "hideVotes": false,
+          "voting": "disabled",
+          "comments": "members",
+          "invitations": "members",
+          "selfJoin": true,
+          "cardCovers": true,
+          "cardCounts": false,
+          "isTemplate": false,
+          "cardAging": "regular",
+          "calendarFeedEnabled": false,
+          "hiddenPluginBoardButtons": [],
+          "switcherViews": [
+            {
+              "viewType": "Board",
+              "enabled": true
+            },
+            {
+              "viewType": "Table",
+              "enabled": true
+            },
+            {
+              "viewType": "Calendar",
+              "enabled": false
+            },
+            {
+              "viewType": "Dashboard",
+              "enabled": false
+            },
+            {
+              "viewType": "Timeline",
+              "enabled": false
+            },
+            {
+              "viewType": "Map",
+              "enabled": false
+            }
+          ],
+          "background": "blue",
+          "backgroundColor": "#0079BF",
+          "backgroundImage": null,
+          "backgroundTile": false,
+          "backgroundBrightness": "dark",
+          "sharedSourceUrl": null,
+          "backgroundImageScaled": null,
+          "backgroundBottomColor": "#0079BF",
+          "backgroundTopColor": "#0079BF",
+          "canBePublic": true,
+          "canBeEnterprise": true,
+          "canBeOrg": true,
+          "canBePrivate": true,
+          "canInvite": true
+        }
+      ]
+    },
+    "labelNames": {
+      "title": "The labelNames Schema",
+      "type": "object",
+      "default": {},
+      "required": [
+        "green",
+        "yellow",
+        "orange",
+        "red",
+        "purple",
+        "blue",
+        "sky",
+        "lime",
+        "pink",
+        "black",
+        "green_dark",
+        "yellow_dark",
+        "orange_dark",
+        "red_dark",
+        "purple_dark",
+        "blue_dark",
+        "sky_dark",
+        "lime_dark",
+        "pink_dark",
+        "black_dark",
+        "green_light",
+        "yellow_light",
+        "orange_light",
+        "red_light",
+        "purple_light",
+        "blue_light",
+        "sky_light",
+        "lime_light",
+        "pink_light",
+        "black_light"
+      ],
+      "properties": {
+        "green": {
+          "title": "The green Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "yellow": {
+          "title": "The yellow Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "orange": {
+          "title": "The orange Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "red": {
+          "title": "The red Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "purple": {
+          "title": "The purple Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "blue": {
+          "title": "The blue Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "sky": {
+          "title": "The sky Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "lime": {
+          "title": "The lime Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "pink": {
+          "title": "The pink Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "black": {
+          "title": "The black Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "green_dark": {
+          "title": "The green_dark Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "yellow_dark": {
+          "title": "The yellow_dark Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "orange_dark": {
+          "title": "The orange_dark Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "red_dark": {
+          "title": "The red_dark Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "purple_dark": {
+          "title": "The purple_dark Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "blue_dark": {
+          "title": "The blue_dark Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "sky_dark": {
+          "title": "The sky_dark Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "lime_dark": {
+          "title": "The lime_dark Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "pink_dark": {
+          "title": "The pink_dark Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "black_dark": {
+          "title": "The black_dark Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "green_light": {
+          "title": "The green_light Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "yellow_light": {
+          "title": "The yellow_light Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "orange_light": {
+          "title": "The orange_light Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "red_light": {
+          "title": "The red_light Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "purple_light": {
+          "title": "The purple_light Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "blue_light": {
+          "title": "The blue_light Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "sky_light": {
+          "title": "The sky_light Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "lime_light": {
+          "title": "The lime_light Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "pink_light": {
+          "title": "The pink_light Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "black_light": {
+          "title": "The black_light Schema",
+          "type": "string",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        }
+      },
+      "examples": [
+        {
+          "green": "",
+          "yellow": "",
+          "orange": "",
+          "red": "",
+          "purple": "",
+          "blue": "",
+          "sky": "",
+          "lime": "",
+          "pink": "",
+          "black": "",
+          "green_dark": "",
+          "yellow_dark": "",
+          "orange_dark": "",
+          "red_dark": "",
+          "purple_dark": "",
+          "blue_dark": "",
+          "sky_dark": "",
+          "lime_dark": "",
+          "pink_dark": "",
+          "black_dark": "",
+          "green_light": "",
+          "yellow_light": "",
+          "orange_light": "",
+          "red_light": "",
+          "purple_light": "",
+          "blue_light": "",
+          "sky_light": "",
+          "lime_light": "",
+          "pink_light": "",
+          "black_light": ""
+        }
+      ]
+    },
+    "limits": {
+      "title": "The limits Schema",
+      "type": "object",
+      "default": {},
+      "required": [],
+      "properties": {},
+      "examples": [
+        {}
+      ]
+    }
+  },
+  "examples": [
+    {
+      "id": "6672cb85ffe2eba51228c71f",
+      "name": "Prueba Karate",
+      "desc": "",
+      "descData": null,
+      "closed": false,
+      "idOrganization": "62ef27e42182415e7d3f1ea2",
+      "idEnterprise": null,
+      "pinned": false,
+      "url": "https://trello.com/b/AEPNxMn9/prueba-karate",
+      "shortUrl": "https://trello.com/b/AEPNxMn9",
+      "prefs": {
+        "permissionLevel": "private",
+        "hideVotes": false,
+        "voting": "disabled",
+        "comments": "members",
+        "invitations": "members",
+        "selfJoin": true,
+        "cardCovers": true,
+        "cardCounts": false,
+        "isTemplate": false,
+        "cardAging": "regular",
+        "calendarFeedEnabled": false,
+        "hiddenPluginBoardButtons": [],
+        "switcherViews": [
+          {
+            "viewType": "Board",
+            "enabled": true
+          },
+          {
+            "viewType": "Table",
+            "enabled": true
+          },
+          {
+            "viewType": "Calendar",
+            "enabled": false
+          },
+          {
+            "viewType": "Dashboard",
+            "enabled": false
+          },
+          {
+            "viewType": "Timeline",
+            "enabled": false
+          },
+          {
+            "viewType": "Map",
+            "enabled": false
+          }
+        ],
+        "background": "blue",
+        "backgroundColor": "#0079BF",
+        "backgroundImage": null,
+        "backgroundTile": false,
+        "backgroundBrightness": "dark",
+        "sharedSourceUrl": null,
+        "backgroundImageScaled": null,
+        "backgroundBottomColor": "#0079BF",
+        "backgroundTopColor": "#0079BF",
+        "canBePublic": true,
+        "canBeEnterprise": true,
+        "canBeOrg": true,
+        "canBePrivate": true,
+        "canInvite": true
+      },
+      "labelNames": {
+        "green": "",
+        "yellow": "",
+        "orange": "",
+        "red": "",
+        "purple": "",
+        "blue": "",
+        "sky": "",
+        "lime": "",
+        "pink": "",
+        "black": "",
+        "green_dark": "",
+        "yellow_dark": "",
+        "orange_dark": "",
+        "red_dark": "",
+        "purple_dark": "",
+        "blue_dark": "",
+        "sky_dark": "",
+        "lime_dark": "",
+        "pink_dark": "",
+        "black_dark": "",
+        "green_light": "",
+        "yellow_light": "",
+        "orange_light": "",
+        "red_light": "",
+        "purple_light": "",
+        "blue_light": "",
+        "sky_light": "",
+        "lime_light": "",
+        "pink_light": "",
+        "black_light": ""
+      },
+      "limits": {}
+    }
+  ]
+}

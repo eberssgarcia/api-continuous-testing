@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "title": "Root Schema",
+  "type": "object",
+  "default": {},
+  "required": [
+    "id",
+    "name",
+    "releaseDate",
+    "reviewScore",
+    "category",
+    "rating"
+  ],
+  "properties": {
+    "id": {
+      "title": "The id Schema",
+      "type": "integer",
+      "default": 0,
+      "examples": [
+        0
+      ]
+    },
+    "name": {
+      "title": "The name Schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Mario"
+      ]
+    },
+    "releaseDate": {
+      "title": "The releaseDate Schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "2012-05-04"
+      ]
+    },
+    "reviewScore": {
+      "title": "The reviewScore Schema",
+      "type": "integer",
+      "default": 0,
+      "examples": [
+        85
+      ]
+    },
+    "category": {
+      "title": "The category Schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Platform"
+      ]
+    },
+    "rating": {
+      "title": "The rating Schema",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "Mature"
+      ]
+    }
+  },
+  "examples": [
+    {
+      "id": 0,
+      "name": "Mario",
+      "releaseDate": "2012-05-04",
+      "reviewScore": 85,
+      "category": "Platform",
+      "rating": "Mature"
+    }
+  ]
+}

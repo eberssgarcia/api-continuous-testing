@@ -28,8 +28,11 @@ Este framework de automatización para microservicios/APIs esta desarrollado con
 2. Ingresar las dependencias de Karate DSL en el archivo POM.xml
 3. Ejecutar comando `mvn install` a través de la terminal
 4. Ejecutar comando `mvn test` para ejecutar el RunnerTest. Este ejeecuta todos los test de prueba
+   <br>**Execution by CMD**
 5. Ejecutar comando `mvn clean test "-Dkarate.options=--tags @video_game"` para ejecutar un test de prueba en específico
-6. Ejecutar comando `mvn clean test -Dkarate.options="--tags @reqres" -Dkarate.env=dev` para ejecutar un test con
+   <br>**Execution by Git Bash Terminal**
+6. Ejecutar comando `mvn clean test -Dkarate.options="--tags @video_game"` para ejecutar un test de prueba en específico
+7. Ejecutar comando `mvn clean test -Dkarate.options="--tags @reqres" -Dkarate.env=dev` para ejecutar un test con
    ambiente específico.
 
 **Nota**: Si ya tienes definido test de prueba, puedes ejecutar el comando `mvn install -DskipTests` para omitir dichos

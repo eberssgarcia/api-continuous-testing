@@ -34,5 +34,4 @@ public class LabsTest {
         genarateReports(results.getReportDir());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
-
 }

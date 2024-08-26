@@ -7,10 +7,10 @@ function fn() {
     var apiToken = ''; // token
     var urlVideoGame = ''; // url video game
 
-    karate.log('karate.env system property');
+    karate.log('Ambiente de ejecución: ', env);
 
     if (!env) {
-        env = 'dev';
+        env = 'cert';
     }
     if (env == 'dev') {
         // customize
@@ -27,6 +27,7 @@ function fn() {
         apiKey = 'c71a72f99c8168a14131facf2d533d0f';
         apiToken = 'ATTAa1ded3c3479a2ef8b9235d03dc638ee2c7b1abcdd34bd401704bc8e32b2cdcb671DCD2BB';
         urlVideoGame = 'https://videogamedb.uk';
+        urlRequest = 'https://reqres.in/api/users/';
     }
 
     var config = {

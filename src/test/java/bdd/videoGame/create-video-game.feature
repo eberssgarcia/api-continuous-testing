@@ -1,4 +1,4 @@
-@create-board
+@video_game
 Feature: Crear un Video Game
   Yo como QA
   Quiero poder ver los resultados de las pruebas
@@ -8,7 +8,7 @@ Feature: Crear un Video Game
 #    * configure ssl = true
     And header Content-Type = 'application/json'
 
-  @TRELLO_01
+  @video_game_01
   Scenario Outline: Crear Board de Trello
     Given url urlVideoGame
     And path '/api/v2/videogame'
@@ -22,5 +22,5 @@ Feature: Crear un Video Game
     * def schemaUtils = Java.type('util.JSONSchemaUtil')
     * assert schemaUtils.isValid(expectedSchema, currentResponse)
     Examples:
-      |  | body_request                                                        |
-      |  | '../../jsonBodyRequest/videoGame/create-video-game-happy-path.json' |
+      | body_request                                                        |
+      | '../../jsonBodyRequest/videoGame/create-video-game-happy-path.json' |
